@@ -1,3 +1,4 @@
+
 body{
   background: #1E1F24;
   font-family: 'Montserrat';
@@ -74,20 +75,25 @@ input[type=text]:focus{
 
 section{
   .add{
-  margin: -1em 0 1.5em 0;
-  z-index: 1000000;
-  input{
-    padding: 1.8em 1em 1.8em 1em;
-    width: 40em;
+    margin: -.95em 0 1.5em 0;
+    z-index: 1000000;
+    input{
+      padding: 1.8em 1em 1.8em 1em;
+      background: #2D2E37;
+      width: 40em;
+      border-radius: .7em;
+      font-size: 1em;
+      font-family: 'Montserrat';
+    }    
+  }
+  div{
+    background: #C4C4C4;
+    height: 2em;
+    margin: -3.3em 0 2em 0;
     border-radius: .7em;
-    background: #2D2E37;
-  }    
+  }
 }
-div{
-  background: #C4C4C4;
-  height: 1em;
-  margin: -3.3em 0 2em 0;
-  border-radius: .7em;
-}
-}
+
+@import 'scss/mediaqueries';
+
 
