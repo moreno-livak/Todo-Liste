@@ -6,11 +6,10 @@ const search = document.querySelector('.search input');
 //Create Todos
 
 const generateTemplate = todo => {
-  const html = `
-    <li class="list-group-item d-flex justify-content-between align-items-center">
-      <span>${todo}</span>
-      <i class="far fa-trash-alt delete"></i>
-    </li>`;
+  const html = `<li class="todo">
+    <img src="assets/Group 114.svg" alt="check" class="delete">
+    <span>${todo}</span>
+  </li>`;
 
     list.innerHTML += html;
 };
