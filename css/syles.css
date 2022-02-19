@@ -83,17 +83,17 @@ input[type=text]:focus {
 }
 
 section .add {
-  margin: -1em 0 1.5em 0;
+  margin: -.95em 0 1.5em 0;
   z-index: 1000000;
 }
 
 section .add input {
   padding: 1.8em 1em 1.8em 1em;
+  background: #2D2E37;
   width: 40em;
   border-radius: .7em;
   font-size: 1em;
   font-family: 'Montserrat';
-  background: #2D2E37;
 }
 
 section div {
@@ -101,5 +101,46 @@ section div {
   height: 2em;
   margin: -3.3em 0 2em 0;
   border-radius: .7em;
+}
+
+@media only screen and (max-width: 800px) {
+  .header .container {
+    max-width: 400px;
+    text-align: center;
+  }
+  .header .container h1 {
+    color: white;
+    font-size: 3em;
+  }
+  .header .container .search {
+    margin: 1.5em 0 1.5em 0;
+    z-index: 1000000;
+  }
+  .header .container .search input {
+    padding: 1.5em 1em 1.5em 1em;
+    width: 20em;
+    border-radius: .7em;
+    font-size: 1em;
+    font-family: 'Montserrat';
+  }
+  .header .container div {
+    background: #C4C4C4;
+    height: 2em;
+    margin: -3.3em 0 2em 0;
+    border-radius: .7em;
+  }
+  .todos li {
+    padding: 1.3em;
+    width: 310px;
+  }
+  .todos li span {
+    bottom: .54em;
+    margin-left: .8em;
+    font-size: .95em;
+  }
+  section .add input {
+    width: 20em;
+    font-size: 1em;
+  }
 }
 /*# sourceMappingURL=syles.css.map */
