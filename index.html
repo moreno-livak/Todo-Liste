@@ -4,43 +4,51 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/syles.css">
   <title>Todo List</title>
 </head>
 <body>
 
-  <div class="container">
 
-    <header class="text-center text-light my-4">
-      <h1 class="mb-4">Todo List</h1>
-      <form class="search">
-        <input class="form-control m-auto" type="text" name="search" placeholder="search todos" />
-      </form>
+    <header class="header">
+      <div class="container">
+        <h1>MightDo</h1>
+        <form class="search">
+          <input class="form-control m-auto" type="text" name="search" placeholder="Search Items"/>
+        </form>
+        <div class="decoration"></div>
+      </div>
     </header>
 
-    <ul class="list-group todos mx-auto text-light">
-      <li class="list-group-item d-flex justify-content-between align-items-center">
-        <span>play Kerbal Space Programm</span>
-        <i class="far fa-trash-alt delete"></i>
+
+    <ul class="todos">
+      <li class="todo">
+        <img src="assets/Group 114.svg" alt="check" class="delete">
+        <span>Hausaufgaben machen</span>
       </li>
-      <li class="list-group-item d-flex justify-content-between align-items-center">
-        <span>learn JavaScript</span>
-        <i class="far fa-trash-alt delete"></i>
+      <li class="todo">
+        <img src="assets/Group 114.svg" alt="check" class="delete">
+        <span>JavaScript lernen</span>
       </li>
-      <li class="list-group-item d-flex justify-content-between align-items-center">
-        <span>pondering the vagaries of human existence</span>
-        <i class="far fa-trash-alt delete"></i>
+      <li class="todo">
+        <img src="assets/Group 114.svg" alt="check" class="delete">
+        <span>Kerbal Space Programm spielen</span>
       </li>
     </ul>
 
-    <form class="add text-center my-4">
-      <label class="text-light">Add a new todo...</label>
-      <input class="form-control m-auto" type="text" name="add" />
+  <section>
+    <form class="add">
+      <input class="form-control" type="text" name="add" placeholder="Add Something"/>
     </form>
+    <div class="decoration"></div>
+  </section>
+    
 
-  </div>
+
 
   <script src="app.js"></script>
 </body>

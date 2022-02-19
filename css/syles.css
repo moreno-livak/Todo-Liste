@@ -1,0 +1,105 @@
+body {
+  background: #1E1F24;
+  font-family: 'Montserrat';
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  margin: 0;
+}
+
+input[type=text] {
+  color: #fff;
+  border: none;
+  background: #3D3D48;
+}
+
+input[type=text]:focus {
+  outline: none;
+}
+
+.header {
+  background-color: #2D2E37;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.header .container {
+  max-width: 800px;
+  text-align: center;
+}
+
+.header .container h1 {
+  color: white;
+  font-size: 3em;
+}
+
+.header .container .search {
+  margin: 1.5em 0 1.5em 0;
+  z-index: 1000000;
+}
+
+.header .container .search input {
+  padding: 1.5em 1em 1.5em 1em;
+  width: 40em;
+  border-radius: .7em;
+  font-size: 1em;
+  font-family: 'Montserrat';
+}
+
+.header .container div {
+  background: #C4C4C4;
+  height: 2em;
+  margin: -3.3em 0 2em 0;
+  border-radius: .7em;
+}
+
+.todos li {
+  background: #2D2E37;
+  padding: 1.5em;
+  list-style-type: none;
+  margin: 1em 0 1em -2.6em;
+  border-radius: .7em;
+  width: 623px;
+}
+
+.todos li span {
+  color: white;
+  position: relative;
+  bottom: .38em;
+  margin-left: 1em;
+  font-size: 1.2em;
+}
+
+.delete {
+  cursor: pointer;
+  position: relative;
+  top: .2em;
+}
+
+.filtered {
+  display: none !important;
+}
+
+section .add {
+  margin: -1em 0 1.5em 0;
+  z-index: 1000000;
+}
+
+section .add input {
+  padding: 1.8em 1em 1.8em 1em;
+  width: 40em;
+  border-radius: .7em;
+  font-size: 1em;
+  font-family: 'Montserrat';
+  background: #2D2E37;
+}
+
+section div {
+  background: #C4C4C4;
+  height: 2em;
+  margin: -3.3em 0 2em 0;
+  border-radius: .7em;
+}
+/*# sourceMappingURL=syles.css.map */
